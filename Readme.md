@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+# Личный проект «Глейси»
 
 * Студент: [Алексей Филипчик](https://up.htmlacademy.ru/htmlcss/33/user/1490823).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
@@ -18,19 +18,19 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1490823-sedona-33) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1490823-gllacy-33) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037949-67a635d6-7bae-11e7-9f2f-1a48fde231b9.jpg">
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037742-a62a72a0-7bad-11e7-9f36-4db8e9329498.jpg">
 
 Получится вот так:
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037953-6a8a7384-7bae-11e7-83ac-59603b1d696c.jpg">
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037746-a760c82c-7bad-11e7-89ab-7c99998d4317.jpg">
 
 #### 3. Клонируйте репозиторий на свой компьютер
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Нажмите кнопку «Clone or download», а затем «Open in Desktop», чтобы клонировать репозиторий через программу [GitHub Desktop](https://desktop.github.com):
 
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037955-6c20c16c-7bae-11e7-9e1a-c52010042976.jpg">
+<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29037747-a8e89422-7bad-11e7-819d-bca9f4c1de18.jpg">
 
 Программа клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
