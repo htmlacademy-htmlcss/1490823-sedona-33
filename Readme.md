@@ -1,4 +1,4 @@
-# Личный проект «Глейси»
+# Личный проект «Седона»
 
 * Студент: [Алексей Филипчик](https://up.htmlacademy.ru/htmlcss/33/user/1490823).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
