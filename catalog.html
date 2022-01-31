@@ -35,14 +35,16 @@
             </div>
         </header>
 
-        <main class="catalog">
+<!------------------------------------------------------------------------ main--------------------------------------------------------------------- -->
+     
+<main class="catalog">
             <section class="hotels">
                 <h1 class="main_header">Гостиницы Седоны</h1>
                 <div class="all_hotels">
                     <img src="#" class="hotels_icon" alt="Домик">
                     <a href="#" class="hotels_link">Гостиницы</a>
                 </div>
-                <frame class="intro">
+                <form class="intro">
                     <h3 class="intro_header">Инфраструктура</h3>
                     <input type="checkbox" class="intro_input">
                     <span class="intro_span">Бассейн</span>
@@ -50,8 +52,8 @@
                     <span class="intro_span">Парковка</span>
                     <input type="checkbox" class="intro_input">
                     <span class="intro_span">Wi-Fi</span>
-                </frame>
-                <frame class="houses">
+                </form>
+                <form class="houses">
                     <h3 class="intro_header">Тип жилья</h3>
                     <input type="radio" class="intro_input">
                     <span class="intro_span">Гостиница</span>
@@ -59,18 +61,116 @@
                     <span class="intro_span">Мотель</span>
                     <input type="radio" class="intro_input">
                     <span class="intro_span">Апартаменты</span>
-                </frame>
-                <frame class="houses">
-                    <h3 class="intro_header">Тип жилья</h3>
+                </form>
+                <form class="houses">
+                    <h3 class="intro_header">Стоимость, Руб.</h3>
+                    <input type="text" class="intro_input" placeholder="0">
+                    <span class="intro_span">от</span>
+                    <input type="text" class="intro_input" placeholder="9000">
+                    <span class="intro_span">До</span>
                     <input type="range" class="intro_input">
-                    <span class="intro_span">Гостиница</span>
-                    <input type="radio" class="intro_input">
-                    <span class="intro_span">Мотель</span>
-                    <input type="radio" class="intro_input">
-                    <span class="intro_span">Апартаменты</span>
-                </frame>
+                </form>
+                <button class="accept_btn">Применить</button>
+                <button class="reset_btn">Сбросить</button>
+            </section>
+            <section class="selection">
+                <form class="selection_frame">
+                    <div class="selection_info">
+                        <h2 class="selection_found_hotels">Найдено гостиниц:</h2>
+                        <div class="selection_result">38</div>
+                    </div>
+                    <input type="text" class="selection_input" placeholder="Сначала дешёвые">
+                    <button class="selection_btn_middle_icon">
+                        <img src="#" alt="Средние значки" class="middle_icon_img">
+                    </button>
+                    <button class="selection_btn_big_icon">
+                        <img src="#" alt="Крупные значки" class="big_icon_img">
+                    </button>
+                    <button class="selection_btn_list_icon">
+                        <img src="#" alt="Список" class="list_icon_img">
+                    </button>
+                </form>
+            </section>
+            <section class="search_result">
+                <p class="search_result_block">
+                    <img src="" alt="Гостиница внешний вид" class="serch_result_img">
+                    <h2 class="search_header">Amara Resort & Spa</h2> 
+                    <p class="hotel_price">Гостиница от 4000 руб.</p>  
+                    <button class="detail">Подробно</button>
+                    <button class="favorites">В избранное</button>
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <div class="serch_result_range">Рейтинг: 8.5</div>
+                </p>
+                <p class="search_result_block">
+                    <img src="" alt="Гостиница внешний вид" class="serch_result_img">
+                    <h2 class="search_header">Desert Quail Inn</h2> 
+                    <p class="hotel_price">Гостиница от 3000 руб.</p>  
+                    <button class="detail">Подробно</button>
+                    <button class="favorites">В избранное</button>
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <div class="serch_result_range">Рейтинг: 8.9</div>
+                </p>
+                <p class="search_result_block">
+                    <img src="" alt="Гостиница внешний вид" class="serch_result_img">
+                    <h2 class="search_header">Villas at Poco Diablo</h2> 
+                    <p class="hotel_price">Гостиница от 2000 руб.</p>  
+                    <button class="detail">Подробно</button>
+                    <button class="favorites">В избранном</button>
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <div class="serch_result_range">Рейтинг: 9.2</div>
+                </p>
+                <p class="search_result_block">
+                    <img src="" alt="Гостиница внешний вид" class="serch_result_img">
+                    <h2 class="search_header">GreenTree Inn</h2> 
+                    <p class="hotel_price">Гостиница от 3000 руб.</p>  
+                    <button class="detail">Подробно</button>
+                    <button class="favorites">В избранное</button>
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <img src="#" alt="Звёздочка" class="search_result_star">
+                    <div class="serch_result_range">Рейтинг: 9.2</div>
+                </p>
             </section>
 
+            <br>
+            <div class="load_more">
+                <button class="load_more_btn">Загрузить ещё</button>
+            </div>
+            <br>
+
+            <section class="search_pages">
+                <button class="search_page_btn">1</button>
+                <button class="search_page_btn">2</button>
+                <button class="search_page_btn">3</button>
+                <button class="search_page_btn">4</button>
+                <button class="search_page_btn">...</button>
+                <button class="search_page_btn">10</button>
+                <span class="search_pages_selection">Гостиниц на странице: </span>
+                <span class="search_pages_select">4</span>
+            </section>
+
+            <div class="subscribe">
+                <h2 class="subscribe_header">Подпишитесь на рассылку</h2>
+                <p class="ssubscribe_info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <form>
+                    <input type="text" class="subscribe_input" placeholder="Ваш e-mail">
+                    <button class="subscribe_btn">Подписаться</button>
+                </form>
+            </div>
         </main>
 
         <!-- footer -->
