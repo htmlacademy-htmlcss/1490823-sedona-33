@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,14 @@
     <title>Catalog</title>
 </head>
 <body>
-    <div class="intro">
+    <div class="container">
         <header class="page_header">
-            <div class="page_header_inner">
-                <img src="#" alt="Логотип">
-                <nav class="page_header_nav">
-                    <ul class="page_header_list">
+            <nav class="page_header_nav">
+                <ul class="page_header_list">
+                    <li class="page_header_list_item">
+                        <img src="img/logo.png" alt="" class="page_header_logo">
+                        <a href="index.html" class="page_header_link"><span class="visually_hidden">Логотип</span></a>
+                    </li>
                     <li class="page_header_list_item">
                         <a href="index.html" class="page_header_link">Главная</a>
                     </li>
@@ -25,23 +27,35 @@
                     <li class="page_header_list_item">
                         <a href="catalog.html" class="page_header_link">Гостинницы</a>
                     </li>
-                    </ul>
-                    <ul class="page_header_list">
-                    <li class="page_header_list_item">Найти</li>
-                    <li class="page_header_list_item">Лайки</li>
-                    <li class="page_header_list_item">Хочу сюда</li>
-                    </ul>
-                </nav>
-            </div>
+                </ul>
+                <ul class="page_header_list">
+                    <li class="page_header_list_item">
+                        <img src="img/Vector.png" alt="" class="page_header_icon">
+                        <a href="#" class="page_header_link">
+                            <span class="visually_hidden">Поиск</span>
+                        </a>
+                    </li>
+                    <li class="page_header_list_item">
+                        <img src="img/variant=heart.png" alt="" class="page_header_icon">
+                        <a href="#" class="page_header_link">
+                            <span class="visually_hidden">Нравится</span>
+                        </a>
+                    </li>
+                    <li class="page_header_list_item">
+                        <a href="#"class="page_header_link">Хочу сюда</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
 <!--  main -->
      
-<main class="catalog">
+        <main class="catalog">
             <section class="hotels">
                 <h1 class="main_header">Гостиницы Седоны</h1>
                 <div class="all_hotels">
-                    <img src="#" class="hotels_icon" alt="Домик">
+                    <img src="img/vector_house.png" class="hotels_icon" alt="">
+                    <img src="img/variant=arrow.png" class="hotels_icon" alt="">
                     <a href="#" class="hotels_link">Гостиницы</a>
                 </div>
                 <form class="intro">
@@ -70,8 +84,15 @@
                     <span class="intro_span">До</span>
                     <input type="range" class="intro_input">
                 </form>
-                <button class="accept_btn">Применить</button>
-                <button class="reset_btn">Сбросить</button>
+                <ul class="hotels_buttons_list">
+                    <li class="hotels_button_item">
+                        <button class="accept_btn">Применить</button>
+                    </li>
+                    <li class="hotels_button_item">
+                        <button class="reset_btn">Сбросить</button>
+                    </li>
+                </ul>
+
             </section>
             <section class="selection">
                 <form class="selection_frame">
