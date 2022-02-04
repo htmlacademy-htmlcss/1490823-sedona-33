@@ -4,6 +4,20 @@
     margin: 0 auto;
     padding-top: 50px;
 }
+.index_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.index_footer_list{
+    display: block;
+    list-style: none;
+}
+.index_footer_item{
+    float: left;
+    margin: 0 5px;
+}
+
 /* .visually_hidden{
     display: none;
 } */
