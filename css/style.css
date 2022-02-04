@@ -1,21 +1,26 @@
 .container{
     width: 100%;
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 50px;
 }
-.index_footer{
+.main_footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.index_footer_list{
-    display: block;
+.social_list{
+    padding: 0;
     list-style: none;
 }
-.index_footer_item{
+.social_item{
     float: left;
     margin: 0 5px;
+}
+.hotels{
+    width: 100%;
+    height: 408px;
+    background: url('../img/filter.png');
 }
 
 /* .visually_hidden{
