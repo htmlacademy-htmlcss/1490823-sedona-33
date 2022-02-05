@@ -3,6 +3,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 50px;
+    background-color: #ccc;
 }
 .main_footer{
     display: flex;
@@ -23,6 +24,6 @@
     background: url('../img/filter.png');
 }
 
-/* .visually_hidden{
+.visually_hidden{
     display: none;
-} */
+}
