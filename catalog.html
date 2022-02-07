@@ -85,7 +85,7 @@
                     <span><b class="search_result_info">38</b></span>
                 </p>
                 <form action="https://htmlacademy.ru/echo" method="post" class="hotel_search_form">
-                    <select size="1" name="rearch_select">
+                    <select size="1" name="search_select" id="search_select_id">
                         <option value="Сначала дешёвые">Сначала дешёвые</option>
                         <option value="Сначала дорогие">Сначала дорогие</option>
                     </select>
@@ -115,44 +115,94 @@
                     <p class="user_btns">
                         <a href="#" class="detales">Подробнее</a>
                         <button class="favorite">В избранное</button>
-                        <div class="range_icons"></div>
+                        <div class="range_icons">
+                            <img src="img/star.png" alt="" class="range_icon">
+                            <img src="img/star.png" alt="" class="range_icon">
+                            <img src="img/star.png" alt="" class="range_icon">
+                            <img src="img/star.png" alt="" class="range_icon">
+                        </div>
                         <div class="range_text">
                             Рейтинг:<span class="range_text_info">8.5</span>
                         </div>
                     </p>
                 </div>
             </section>
+
             <section class="hotels_search_result" id="hotels">
                 <div class="search_result_inner">
-                    <img src="img/hotel-2.png" alt="Amara Resort & Spa" class="result_img">
-                    <h3 class="result_header">Desert Quail Inn</h3>
+                    <img src="img/hotel-2.png" alt="Desert Quail Inn" class="result_img">
+                    <h3 class="result_header">Amara Resort & Spa</h3>
                     <p class="type_and_price">
-                        <span class="type_hotel">Гостиница</span>
-                        <span>От</span>
-                        <b class="price">3000 <span>&#x20bd;</span></b>
+                        <span class="type_hotel">
+                            Гостиница 
+                        </span>
+                        <span>
+                            От: <b class="price">3000 <span>&#x20bd;</span></b>
+                        </span>
                     </p>
-                </div>
-            </section>
-            <section class="hotels_search_result" id="hotels">
-                <div class="search_result_inner">
-                    <img src="img/hotel-3.png" alt="Amara Resort & Spa" class="result_img">
-                    <h3 class="result_header">Villas at Poco Diablo</h3>
-                    <p class="type_and_price">
-                        <span class="type_hotel">Гостиница</span>
-                        <span>От</span>
-                        <b class="price">2000 <span>&#x20bd;</span></b>
+                    <p class="user_btns">
+                        <a href="#" class="detales">Подробнее</a>
+                        <button class="favorite">В избранное</button>
+                        <div class="range_icons">
+                            <img src="img/star.png" alt="" class="range_icon">
+                            <img src="img/star.png" alt="" class="range_icon">
+                            <img src="img/star.png" alt="" class="range_icon">
+                        </div>
+                        <div class="range_text">
+                            Рейтинг:<span class="range_text_info">8.9</span>
+                        </div>
                     </p>
                 </div>
             </section>
 
             <section class="hotels_search_result" id="hotels">
                 <div class="search_result_inner">
-                    <img src="img/hotel-4.png" alt="Amara Resort & Spa" class="result_img">
-                    <h3 class="result_header">GreenTree Inn</h3>
-                    <p class="hotel_and_price">
-                        <span class="type_hotel">Гостиница</span>
-                        <span>От</span>
-                        <b class="price">3000 <span>&#x20bd;</span></b>
+                    <img src="img/hotel-3.png" alt="Villas at Poco Diablo" class="result_img">
+                    <h3 class="result_header">Amara Resort & Spa</h3>
+                    <p class="type_and_price">
+                        <span class="type_hotel">
+                            Гостиница 
+                        </span>
+                        <span>
+                            От: <b class="price">2000 <span>&#x20bd;</span></b>
+                        </span>
+                    </p>
+                    <p class="user_btns">
+                        <a href="#" class="detales">Подробнее</a>
+                        <button class="favorite">В избранное</button>
+                        <div class="range_icons">
+                            <img src="img/star.png" alt="" class="range_icon">
+                            <img src="img/star.png" alt="" class="range_icon">
+                        </div>
+                        <div class="range_text">
+                            Рейтинг:<span class="range_text_info">9.2</span>
+                        </div>
+                    </p>
+                </div>
+            </section>
+
+            <section class="hotels_search_result" id="hotels">
+                <div class="search_result_inner">
+                    <img src="img/hotel-1.png" alt="GreenTree Inn" class="result_img">
+                    <h3 class="result_header">Amara Resort & Spa</h3>
+                    <p class="type_and_price">
+                        <span class="type_hotel">
+                            Гостиница 
+                        </span>
+                        <span>
+                            От: <b class="price">3000 <span>&#x20bd;</span></b>
+                        </span>
+                    </p>
+                    <p class="user_btns">
+                        <a href="#" class="detales">Подробнее</a>
+                        <button class="favorite">В избранное</button>
+                        <div class="range_icons">
+                            <img src="img/star.png" alt="" class="range_icon">    
+                            <img src="img/star.png" alt="" class="range_icon">    
+                        </div>
+                        <div class="range_text">
+                            Рейтинг:<span class="range_text_info">9.2</span>
+                        </div>
                     </p>
                 </div>
             </section>
@@ -164,7 +214,29 @@
             <hr>
             
             <section class="hotels_search_paging">
-
+                <form action="https://echo.htmlacademy.ru" class="page_choice">
+                    <button class="page_choice_btn">1</button>
+                    <button class="page_choice_btn">2</button>
+                    <button class="page_choice_btn">3</button>
+                    <button class="page_choice_btn">4</button>
+                    <button class="page_choice_btn">...</button>
+                    <button class="page_choice_btn">10</button>
+                </form>
+                <form action="https://echo.htmlacademy.ru" class="view_on_page">
+                    <p class="hotels_view_text">
+                        Гостиниц на странице:
+                    </p>
+                    <p class="hotel_view_page">
+                        <select size="1" name="hotels_on_page" id="hotels_on_page_id">
+                            <option value="1">1</option>   
+                            <option value="2">2</option>   
+                            <option value="3">3</option>   
+                            <option value="4">4</option>   
+                            <option value="5">5</option>   
+                            <option value="6">6</option>   
+                        </select>
+                    </p>
+                </form>
             </section>
 
 
