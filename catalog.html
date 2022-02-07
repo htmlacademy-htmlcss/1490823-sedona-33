@@ -27,10 +27,18 @@
                 </ul>
                 <ul class="nav_list user_nav_list">
                     <li class="nav_list_item">
-                        <a href="#" class="nav_btn"><span class="visually_hidden">Найти</span></a>
+                        <a href="#" class="nav_btn">
+                            <span class="visually_hidden">
+                                Найти
+                            </span>
+                        </a>
                     </li>
                     <li class="nav_list_item">
-                        <a href="#" class="nav_link"><span class="visually_hidden">Нравится</span></a>
+                        <a href="#" class="nav_link">
+                            <span class="visually_hidden">
+                                Нравится
+                            </span>
+                        </a>
                     </li>
                     <li class="nav_list_item">
                         <a href="#" class="nav_link">Хочу сюда</a>
@@ -41,48 +49,95 @@
 
         <main class="main_content">
             <section class="intro">
-                <div class="intro_inner">
-                    <h1 class="hotels_header">Гостиницы Седоны</h1>
-                    <a href="#hotels" class="hotels_header_link">Гостиницы</a>
-                </div>
+                <h1 class="hotels_header">Гостиницы Седоны</h1>
+                <a href="#hotels" class="hotels_header_link">Гостиницы</a>
                 <form action="https://echo.htmlacademy.ru" class="search_form" method="post">
-                    <section class="infrastructure">
-                        <h2 class="infrastructure_header">Инфраструктура</h2>
+                    <div class="infrastructure">
+                        <h3 class="infrastructure_header">
+                                Инфраструктура
+                        </h3>
                         <ul class="infrastructure_list">
-                            <li class="infrastructure_item"><input type="checkbox" class="checkbox">Бассейн</li>
-                            <li class="infrastructure_item"><input type="checkbox" class="checkbox">Парковка</li>
-                            <li class="infrastructure_item"><input type="checkbox" class="checkbox">Wi-Fi</li>
+                            <li class="infrastructure_item">
+                                <input type="checkbox" class="checkbox" name="swim">
+                                Бассейн
+                            </li>
+                            <li class="infrastructure_item">
+                                <input type="checkbox" class="checkbox" name="parking">
+                                Парковка
+                            </li>
+                            <li class="infrastructure_item">
+                                <input type="checkbox" class="checkbox" name="WiFi">
+                                Wi-Fi
+                            </li>
                         </ul>
-                    </section>
+                    </div>
 
-                    <section class="type_of_hotel">
-                        <h2 class="type_of_hotel_header">Тип жилья</h2>
-                        <ul class="type_of_hotel_list">
-                            <li class="type_of_hotel_item"><input type="radio" class="radioButton">Гостиница</li>
-                            <li class="type_of_hotel_item"><input type="radio" class="radioButton">Отель</li>
-                            <li class="type_of_hotel_item"><input type="radio" class="radioButton">Апартаменты</li>
+                    <div class="type_of_hotel">
+                        <h3 class="type_hotel_header">
+                            Тип жилья
+                        </h3>
+                         <ul class="type_of_hotel_list">
+                            <li class="type_of_hotel_item">
+                                <input type="radio" class="radio_btn" name="inn">
+                                Гостиница
+                            </li>
+                            <li class="type_of_hotel_item">
+                                <input type="radio" class="radio_btn" name="hotel">
+                                Отель
+                            </li>
+                            <li class="type_of_hotel_item">
+                                <input type="radio" class="radio_btn" name="apartments">
+                                Апартаменты
+                            </li>
                         </ul>
-                    </section>
+                    </div>
 
-                    <section class="type_of_hotel">
-                        <h2 class="type_of_hotel_header">Стоимость, <span>&#x20bd;</span></h2>
+                    <div class="type_of_hotel">
+                        <h3 class="type_hotel_header">
+                            <span class="visually_hidden">
+                                Стоимость
+                            </span>
+                        </h3>
+                        <p class="type_of_hotel_header">Стоимость, <span>&#x20bd;</span></p>
                         <ul class="type_of_hotel_list">
-                            <li class="type_of_hotel_item"><input type="text" class="text_field" placeholder="0"></li>
-                            <li class="type_of_hotel_item"><input type="text" class="text_field" placeholder="9000"></li>
-                            <li class="type_of_hotel_item"><input type="range" class="range_field"></li>
+                            <li class="type_of_hotel_item">
+                                От
+                                <input type="text" class="text_field" placeholder="0" name="min_price">
+                            </li>
+                            <li class="type_of_hotel_item">
+                                До
+                                <input type="text" class="text_field" placeholder="9000" name="max_price">
+                            </li>
+                            <li class="type_of_hotel_item">
+                                <input type="range" class="range_field">
+                            </li>
                         </ul>
-                    </section>
-                    <section class="intro_buttons">
+                    </div>
+                    <div class="intro_buttons">
+                        <h3 class="intro_buttons_header">
+                            <span class="visually_hidden">
+                                Кнопки "Применить" и "Сбросить"
+                            </span>
+                        </h3>
                         <button class="submit" type="submit">Применить</button>  
                         <button class="reset" type="reset">Сбросить</button>  
-                    </section>
+                    </div>
                 </form>
             </section>
 
             <section class="hotels_search">
+                <h3 class="hotels_search_header">
+                    <span class="visually_hidden">
+                        Внешний вид результата поиска
+                    </span>
+                </h3>
                 <p class="search_result">
-                    <span><b class="search_result_text">Найдено гостиниц:</b></span>
-                    <span><b class="search_result_info">38</b></span>
+                    <b class="search_result_label">
+                        Найдено гостиниц:
+                    </b>
+                    <b class="search_result_info">
+                        38
+                    </b>
                 </p>
                 <form action="https://htmlacademy.ru/echo" method="post" class="hotel_search_form">
                     <select size="1" name="search_select" id="search_select_id">
@@ -90,17 +145,16 @@
                         <option value="Сначала дорогие">Сначала дорогие</option>
                     </select>
                 </form> 
-                <secion class="preview">
-                    <span class="visually_hidden">Кнопки переключения вида просмотра отелей</span>
-                    <p class="search_result_view">
-                        <button class="show_middle_icons">Иконки</button>
-                        <button class="show_big_icons">Фото</button>
-                        <button class="show_list">Список</button>
-                    </p>
-                </secion>
+                <span class="visually_hidden">Кнопки переключения вида просмотра отелей</span>
+                <p class="search_result_view">
+                    <button class="show_middle_icons">Иконки</button>
+                    <button class="show_big_icons">Фото</button>
+                    <button class="show_list">Список</button>
+                </p>
             </section>
             
-            <section class="hotels_search_result" id="hotels">
+            <section class="hotels_search_result">
+
                 <div class="search_result_inner">
                     <img src="img/hotel-1.png" alt="Amara Resort & Spa" class="result_img">
                     <h3 class="result_header">Amara Resort & Spa</h3>
@@ -112,7 +166,7 @@
                             От: <b class="price">4000 <span>&#x20bd;</span></b>
                         </span>
                     </p>
-                    <p class="user_btns">
+                    <div class="user_btns">
                         <a href="#" class="detales">Подробнее</a>
                         <button class="favorite">В избранное</button>
                         <div class="range_icons">
@@ -124,11 +178,9 @@
                         <div class="range_text">
                             Рейтинг:<span class="range_text_info">8.5</span>
                         </div>
-                    </p>
+                    </div>
                 </div>
-            </section>
 
-            <section class="hotels_search_result" id="hotels">
                 <div class="search_result_inner">
                     <img src="img/hotel-2.png" alt="Desert Quail Inn" class="result_img">
                     <h3 class="result_header">Amara Resort & Spa</h3>
@@ -140,7 +192,7 @@
                             От: <b class="price">3000 <span>&#x20bd;</span></b>
                         </span>
                     </p>
-                    <p class="user_btns">
+                    <div class="user_btns">
                         <a href="#" class="detales">Подробнее</a>
                         <button class="favorite">В избранное</button>
                         <div class="range_icons">
@@ -151,11 +203,9 @@
                         <div class="range_text">
                             Рейтинг:<span class="range_text_info">8.9</span>
                         </div>
-                    </p>
+                    </div>
                 </div>
-            </section>
 
-            <section class="hotels_search_result" id="hotels">
                 <div class="search_result_inner">
                     <img src="img/hotel-3.png" alt="Villas at Poco Diablo" class="result_img">
                     <h3 class="result_header">Amara Resort & Spa</h3>
@@ -167,7 +217,7 @@
                             От: <b class="price">2000 <span>&#x20bd;</span></b>
                         </span>
                     </p>
-                    <p class="user_btns">
+                    <div class="user_btns">
                         <a href="#" class="detales">Подробнее</a>
                         <button class="favorite">В избранное</button>
                         <div class="range_icons">
@@ -177,11 +227,9 @@
                         <div class="range_text">
                             Рейтинг:<span class="range_text_info">9.2</span>
                         </div>
-                    </p>
+                    </div>
                 </div>
-            </section>
 
-            <section class="hotels_search_result" id="hotels">
                 <div class="search_result_inner">
                     <img src="img/hotel-1.png" alt="GreenTree Inn" class="result_img">
                     <h3 class="result_header">Amara Resort & Spa</h3>
@@ -193,7 +241,8 @@
                             От: <b class="price">3000 <span>&#x20bd;</span></b>
                         </span>
                     </p>
-                    <p class="user_btns">
+
+                    <div class="user_btns">
                         <a href="#" class="detales">Подробнее</a>
                         <button class="favorite">В избранное</button>
                         <div class="range_icons">
@@ -203,17 +252,24 @@
                         <div class="range_text">
                             Рейтинг:<span class="range_text_info">9.2</span>
                         </div>
-                    </p>
+                    </div>
+
                 </div>
+
             </section>
 
             <hr>
                 <form action="https://echo.htmlacademy.ru" method="post" class="load_more">
-                    <button type="submit" class="load_btn">Загрузить ещё</button>   
+                    <button type="submit" class="load_btn" name="more_hotels">Загрузить ещё</button>   
                 </form>
             <hr>
             
             <section class="hotels_search_paging">
+                <h3 class="paging_header">
+                    <span class="visually_hiden">
+                        Страницы результатов поиска отелей
+                    </span>
+                </h3>
                 <form action="https://echo.htmlacademy.ru" class="page_choice">
                     <button class="page_choice_btn">1</button>
                     <button class="page_choice_btn">2</button>
@@ -223,10 +279,8 @@
                     <button class="page_choice_btn">10</button>
                 </form>
                 <form action="https://echo.htmlacademy.ru" class="view_on_page">
-                    <p class="hotels_view_text">
-                        Гостиниц на странице:
-                    </p>
                     <p class="hotel_view_page">
+                        <span>Гостиниц на странице:</span>
                         <select size="1" name="hotels_on_page" id="hotels_on_page_id">
                             <option value="1">1</option>   
                             <option value="2">2</option>   
