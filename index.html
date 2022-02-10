@@ -16,10 +16,10 @@
               <a href="index.html" class="nav_link">Главная</a>
             </li>
             <li class="nav_list_item">
-              <a href="" class="nav_link">О Седоне</a>
+              <a href="#main_content_list" class="nav_link">О Седоне</a>
             </li>
             <li class="nav_list_item">
-              <a href="catalog.html" class="nav_link">Гостинницы</a>
+              <a href="catalog.html" class="nav_link">Гостиницы</a>
             </li>
           </ul>
           <ul class="nav_list user_nav_list">
@@ -35,7 +35,7 @@
           </ul>
         </nav>
       </header>
-      <!--  -->
+      <!--  ------------------------------------- секция main -----------------------------------------  -->
       <main class="main_index">
         <section class="intro_main">
           <img src="img/welcome.png" alt="Добро пожаловать в великолепие!" class="intro_main_img">
@@ -49,7 +49,7 @@
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
           </p>
 
-          <ul class="main_content_list">
+          <ul class="main_content_list" id="main_content_list">
             <li class="main_content_item">
               <h3 class="main_content_header">Настоящий городок</h3>
               <p class="main_content_info">№1</p>
@@ -128,7 +128,7 @@
             Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="catalog.html" class="hotell_btn all_btn">Поиск гостинницы в Седоне</a>
+          <a href="catalog.html" class="hotel_btn all_btn">Поиск гостинницы в Седоне</a>
         </section>
 
         <section class="subscribe">
@@ -138,14 +138,14 @@
             честное бойскаутское!
           </p>
     
-          <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="get">
-            <input type="text" name="user_email" class="subscribe_input"  placeholder="Ваш e-mail">
+          <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="user_email" class="subscribe_input" id="subscribe_input" placeholder="Ваш e-mail" required>
             <button class="subscribe_btn" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
 
-        <!-- footer -->
+        <!-- ------------------------------------- footer ----------------------------------------- -->
 
         <footer class="main_footer">
           <ul class="social_list">
