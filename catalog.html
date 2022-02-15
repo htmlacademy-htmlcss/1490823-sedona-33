@@ -7,49 +7,44 @@
 </head>
 <body>
   <div class="container">
+
     <header class="page_header">
-      <nav class="page_header_nav">
-        <a href="index.html" class="nav_link">
-          <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона" class="nav_logo">
-        </a>
-        <ul class="nav_list">
-          <li class="nav_list_item">
-            <a href="index.html" class="nav_link">Главная</a>
-          </li>
-          <li class="nav_list_item">
-            <a href="index.html#main_content_list" class="nav_link">О Седоне</a>
-          </li>
-          <li class="nav_list_item">
-            <a href="catalog.html" class="nav_link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="nav_list user_nav_list">
-          <li class="nav_list_item">
-            <a href="#" class="nav_btn">
-              <span class="visually_hidden">
-                Найти
-              </span>
-            </a>
-          </li>
-          <li class="nav_list_item">
-            <a href="#" class="nav_link">
-              <span class="visually_hidden">
-                Нравится
-              </span>
-            </a>
-          </li>
-          <li class="nav_list_item">
-            <a href="#" class="nav_link">Хочу сюда</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-<!-- ----------------------------- секция main ------------------------ -->
+        <nav class="page_header_nav">
+          <a href="index.html" class="nav_link">
+            <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона" class="nav_logo">
+          </a>
+          <ul class="list nav_list">
+            <li class="nav_list_item">
+              <a href="index.html" class="nav_link">Главная</a>
+            </li>
+            <li class="nav_list_item">
+              <a href="#main_content_list" class="nav_link">О Седоне</a>
+            </li>
+            <li class="nav_list_item">
+              <a href="catalog.html" class="nav_link">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="list user_nav_list">
+            <li class="nav_list_item">
+              <a href="#" class="nav_btn"><span class="visually_hidden">Найти</span></a>
+            </li>
+            <li class="nav_list_item">
+              <a href="#" class="nav_link"><span class="visually_hidden">Нравится</span></a>
+            </li>
+            <li class="nav_list_item">
+              <a href="catalog.html" class="all_btn nav_btn">Хочу сюда</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+<!-- ............................... секция main ................................ -->
+
     <main class="main_content">
       <section class="catalog_hotels">
           <h1 class="main_header">Гостиницы Седоны</h1>
 
-          <ul class="breadcrumbs_list">
+          <ul class="list breadcrumbs_list">
             <li class="breadcrumbs_item">
               <a href="index.html" class="visually_hidden">Домой</a>
             </li>
@@ -61,7 +56,7 @@
           <form action="https://echo.htmlacademy.ru" class="catalog_hotels_filter" method="post">
             <fieldset class="infrastructure">
               <legend class="catalog_hotels_title">Инфраструктура</legend>
-              <ul class="infrastructure_list">
+              <ul class="list infrastructure_list">
                   <li class="infrastructure_item">
                       <label for="swim">
                           <input type="checkbox" class="checkbox" id="swim" name="swim" checked>
@@ -85,7 +80,7 @@
 
             <fieldset class="hotels_type">
               <legend class="catalog_hotels_title">Тип жилья</legend>
-              <ul class="hotels_type_list">
+              <ul class="list hotels_type_list">
                 <li class="hotels_type_item">
                   <label class="control" for="inn">
                     <input type="radio" class="radio_btn" id="inn" name="radio_btn" value="inn" checked>
@@ -109,7 +104,7 @@
 
             <fieldset class="type_of_hotel">
               <legend class="catalog_hotels_title">Стоимость, <span>&#x20bd;</span></legend>
-              <ul class="type_of_hotel_list">
+              <ul class="list type_of_hotel_list">
                 <li class="type_of_hotel_item">
                   <label for="price_field_min">
                     От
@@ -154,11 +149,11 @@
         </a>
       </section>
 
-      <!-- -------------- вывод гостиниц и отелей ------------------------- -->
+      <!-- ............... результаты поиска, карточки с предложениями ................ -->
 
       <section class="hotels_search_result">
         <h2 class="visually_hidden">Список отелей</h2>
-        <ul class="search_list">
+        <ul class="list search_list">
           <li class="search_result_inner">
             <a href="#" class="result_detail" tabindex="-1">
               <img src="images/catalog/hotel-1.jpg" width="300" height="206" alt="Amara Resort & Spa" class="result_img">
@@ -224,11 +219,11 @@
 
       </section>
 
-      <!-- ----------------- конец вывода гостиниц и отелей --------------------- -->
+      <!-- ............... конец поиска, карточек с предложениями ................ -->
 
       <section class="hotels_search_paging">
         <h2 class="visually_hiden">Выбор сраниц</h2>
-        <ul class="hotels_page_list">
+        <ul class="list hotels_page_list">
           <li class="hotels_page_item">
             <a href="#" class="page_choice_link">1</a>
           </li>
@@ -266,7 +261,7 @@
       </section>
 
 
-      <section class="subscribe_block">
+      <section class="subscribe">
         <h2 class="subscribe_header">Подпишитесь на рассылку</h2>
         <p class="subscribe_info">
           Только полезная информация и никакого спама,
@@ -275,15 +270,15 @@
   
         <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post">
           <input type="email" name="user_email" class="subscribe_input" id="subscribe_input" placeholder="Ваш e-mail" required>
-          <button class="subscribe_btn" type="submit">Подписаться</button>
+          <button class="all_btn subscribe_btn" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     
-    <!-- --------------------------- footer ------------------------------ -->
+    <!-- .......................... footer ........................... -->
 
     <footer class="main_footer">
-      <ul class="social_list">
+      <ul class="list social_list">
         <li class="social_item">
           <a href="https://www.facebook.com/htmlacademy" class="social_link">
             <span class="visually_hidden">facebook</span>
