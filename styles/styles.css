@@ -14,7 +14,7 @@
 }
 
 
-/* ...................... body ................... */
+/*  body  */
 
 body{
   font-family: 'PT Sans', sans-serif;
@@ -75,7 +75,7 @@ ul{
   padding: 0;
 }
 
-/* ............................... header .................... */
+/*  header  */
 
 .nav_btn{
   width: 160px;
@@ -94,7 +94,7 @@ ul{
 }
 
 
-/* ................................ main ........................ */
+/*  main  */
 
 .main_index{
   text-align: center;
@@ -138,7 +138,7 @@ ul{
 }
 
 
-/* .............................. searching_hotel ........................ */
+/*  searching_hotel  */
 
 .hotels_btn{
   width: 575px;
@@ -147,7 +147,7 @@ ul{
   border-radius: 10px;
 }
 
-/* ................................. subscribe .......................... */
+/*  subscribe  */
 
 .subscribe{
   width: 100%;
@@ -169,7 +169,7 @@ ul{
   font-family: inherit;
 }
 
-/* .......................... footer ....................... */
+/*  footer  */
 
 .twitter_icon{
   display: inline-block;
@@ -285,9 +285,6 @@ ul{
   line-height: 60px;
   margin: 0 auto;
 }
-
-
-
 
 .hotels_page_list{
   display: flex;
