@@ -13,7 +13,7 @@
           <a href="index.html" class="nav_link">
             <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона" class="nav_logo">
           </a>
-          <ul class="list nav_list">
+          <ul class="nav_list">
             <li class="nav_list_item">
               <a href="index.html" class="nav_link">Главная</a>
             </li>
@@ -24,7 +24,7 @@
               <a href="catalog.html" class="nav_link">Гостиницы</a>
             </li>
           </ul>
-          <ul class="list user_nav_list">
+          <ul class="user_nav_list">
             <li class="nav_list_item">
               <a href="#" class="nav_link search_icon">
                 <span class="visually_hidden">Найти</span>
@@ -44,7 +44,7 @@
         </nav>
       </header>
 
-      <!--  ----------------------- секция main --------------------------  -->
+ <!-- main -->
 
       <main class="main_index">
         <section class="intro_main">
@@ -61,16 +61,17 @@
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
           </p>
 
-          <ul class="list main_content_list" id="main_content_list">
+          <ul class="list main_content_list">
             <li class="main_content_item">
-              <h3 class="main_content_header">Настоящий городок</h3>
-              <p class="main_content_info">№1</p>
-              <p class="main_content_info">
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
-              <img src="images/sedona_veiw.jpg" width="800" height="384" alt="Внешний вид Седоны" class="main_content_img">  
-              <ul class="list main_content_inner_list">
-
+              <div class="main_content_item_block">
+                <h3 class="main_content_header">Настоящий городок</h3>
+                <p class="main_content_info">№1</p>
+                <p class="main_content_info">
+                  Седона — не аттракцион для туристов, там течёт своя жизнь
+                </p>
+                <img src="images/sedona_veiw.jpg" width="800" height="384" alt="Внешний вид Седоны" class="main_content_img"> 
+              </div> 
+                <ul class="list main_content_inner_list">
                 <li class="main_content_item_inner sedona_housing">
                   <h4 class="housing_item_header">Жильё</h4>
                   <p class="housing_item_info">
@@ -98,7 +99,7 @@
               </ul>
             </li>
             
-            <li class="main_content_item">
+            <li class="main_content_item_block">
               <img src="images/devi_bridge.jpg" width="800" height="384" alt="Мост через ущелье" class="main_content_img">
               <h3 class="main_content_header">
                 Там есть мост дьявола
@@ -110,9 +111,9 @@
             </li> 
 
             <li class="main_content_item_inner sedona_town">
-              <h3 class="main_content_header">Небольшая площадь</h3>
-              <p class="main_content_info">№3</p>
-              <p class="main_content_info">
+              <h3 class="sedona_town_header">Небольшая площадь</h3>
+              <p class="sedona_town_info">№3</p>
+              <p class="sedona_town_info">
                 Все достопримечательности находятся очень близко
               </p>  
             </li>
@@ -141,7 +142,7 @@
             Укажите предполагаемые даты поездки,
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a href="catalog.html" class="buttons hotels_btn">Поиск гостинницы в Седоне</a>
+          <a href="catalog.html" class="buttons hotels_btn">Поиск гостиницы в Седоне</a>
         </section>
 
         <section class="subscribe">
@@ -160,32 +161,32 @@
         </section>
       </main>
 
-        <!-- -------------------- footer -------------------------- -->
+        <!-- footer -->
 
-        <footer class="main_footer">
-          <ul class="list social_list">
-            <li class="social_item">
-              <a href="https://twitter.com/htmlacademy_ru" class="twitter_icon">
-                <span class="visually_hidden">twitter</span>
-              </a>
-            </li>
-            <li class="social_item">
-              <a href="https://www.facebook.com/htmlacademy" class="facebook_icon">
-                <span class="visually_hidden">facebook</span>
-              </a>
-            </li>
-            <li class="social_item">
-              <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="youtube_icon">
-                <span class="visually_hidden">youtube</span>
-              </a>
-            </li>
-          </ul> 
-            <address class="phone_number">
-              <a href="tel:+78005558628" class="main_footer_phone">+7(800)555-86-28</a>
-            </address>
-          <a href="https://htmlacademy.ru/" class="copyright_link">
-            <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy" class="copyright_logo">
-          </a>
+      <footer class="main_footer">
+        <ul class="social_list">
+          <li class="social_item">
+            <a href="https://twitter.com/htmlacademy_ru" class="twitter_icon">
+              <span class="visually_hidden">twitter</span>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="https://www.facebook.com/htmlacademy" class="facebook_icon">
+              <span class="visually_hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social_item">
+            <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="youtube_icon">
+              <span class="visually_hidden">youtube</span>
+            </a>
+          </li>
+        </ul> 
+          <address class="phone_number">
+            <a href="tel:+78005558628" class="main_footer_phone">+7(800)555-86-28</a>
+          </address>
+        <a href="https://htmlacademy.ru/" class="copyright_link">
+          <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy" class="copyright_logo">
+        </a>
       </footer>
     </div>
   </body>

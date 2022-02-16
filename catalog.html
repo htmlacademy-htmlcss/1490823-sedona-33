@@ -9,34 +9,40 @@
   <div class="container">
 
     <header class="page_header">
-        <nav class="page_header_nav">
-          <a href="index.html" class="nav_link">
-            <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона" class="nav_logo">
-          </a>
-          <ul class="list nav_list">
-            <li class="nav_list_item">
-              <a href="index.html" class="nav_link">Главная</a>
-            </li>
-            <li class="nav_list_item">
-              <a href="#main_content_list" class="nav_link">О Седоне</a>
-            </li>
-            <li class="nav_list_item">
-              <a href="catalog.html" class="nav_link">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="list user_nav_list">
-            <li class="nav_list_item">
-              <a href="#" class="nav_btn"><span class="visually_hidden">Найти</span></a>
-            </li>
-            <li class="nav_list_item">
-              <a href="#" class="nav_link"><span class="visually_hidden">Нравится</span></a>
-            </li>
-            <li class="nav_list_item">
-              <a href="catalog.html" class="all_btn nav_btn">Хочу сюда</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="page_header_nav">
+        <a href="index.html" class="nav_link">
+          <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона" class="nav_logo">
+        </a>
+        <ul class="list nav_list">
+          <li class="nav_list_item">
+            <a href="index.html" class="nav_link">Главная</a>
+          </li>
+          <li class="nav_list_item">
+            <a href="#main_content_list" class="nav_link">О Седоне</a>
+          </li>
+          <li class="nav_list_item home_icon">
+            <a class="nav_link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="list user_nav_list">
+          <li class="nav_list_item">
+            <a href="#" class="nav_link search_icon">
+              <span class="visually_hidden">Найти</span>
+            </a>
+          </li>
+          <li class="nav_list_item">
+            <a href="#" class="nav_link favorite_icon">
+              <span class="visually_hidden">Нравится</span>
+            </a>
+          </li>
+          <li class="nav_list_item">
+            <a href="catalog.html" class="buttons nav_link nav_btn">
+              Хочу сюда
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
 <!-- ............................... секция main ................................ -->
 
@@ -46,7 +52,9 @@
 
           <ul class="list breadcrumbs_list">
             <li class="breadcrumbs_item">
-              <a href="index.html" class="visually_hidden">Домой</a>
+              <a href="index.html" class="breadcrumbs_icon">
+                <span class="visually_hidden">Домой</span>
+              </a>
             </li>
             <li class="breadcrumbs_item">
               <a class="breadcrumbs_link">Гостиницы</a>
@@ -124,8 +132,8 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="submin_btn" type="submit">Применить</button>
-            <button class="reset_btn" type="reset">Сбросить</button>
+            <button class="buttons submit_btn" type="submit">Применить</button>
+            <button class="buttons reset_btn" type="reset">Сбросить</button>
           </form>
       </section>
 
@@ -163,10 +171,12 @@
             </a>
             <p class="hotel_type">Гостиница</p>
             <p class="hotel_price">От 4000 ₽</p>
-            <a href="#" class="user_btns_detail">Подробнее</a>
-            <a href="#" class="user_btns_favorite">В избранное</a>
-            <p class="visually_hidden">4 звезды</p>
-            <p>Рейтинг:<span class="hotel_range_info">8.5</span></p>
+            <a href="#" class="buttons user_btns_detail">Подробнее</a>
+            <a href="#" class="buttons user_btns_favorite">В избранное</a>
+            <p class="stars_block">
+              <span class="visually_hidden">4 звезды</span>
+            </p>
+            <p >Рейтинг:<span class="hotel_range_info">8.5</span></p>
           </li>
 
           <li class="search_result_inner">
@@ -178,10 +188,12 @@
             </a>
             <p class="hotel_type">Гостиница</p>
             <p class="hotel_price">От 3000 ₽</p>
-            <a href="#" class="user_btns_detail">Подробнее</a>
-            <a href="#" class="user_btns_favorite">В избранное</a>
-            <p class="visually_hidden">3 звезды</p>
-            <p>Рейтинг:<span class="hotel_range_info">8.9</span></p>
+            <a href="#" class="buttons user_btns_detail">Подробнее</a>
+            <a href="#" class="buttons user_btns_favorite">В избранное</a>
+            <p class="stars_block">
+              <span class="visually_hidden">3 звезды</span>
+            </p>
+            <p>Рейтинг:<span class="hotel_range_info"> 8.9</span></p>
           </li>
 
           <li class="search_result_inner">
@@ -193,10 +205,12 @@
             </a>
             <p class="hotel_type">Гостиница</p>
             <p class="hotel_price">От 2000 ₽</p>
-            <a href="#" class="user_btns_detail">Подробнее</a>
-            <a href="#" class="user_btns_favorite">В избранное</a>
-            <p class="visually_hidden">2 звезды</p>
-            <p>Рейтинг:<span class="hotel_range_info">9.2</span></p>
+            <a href="#" class="buttons user_btns_detail">Подробнее</a>
+            <a href="#" class="buttons user_btns_favorite">В избранное</a>
+            <p class="stars_block">
+              <span class="visually_hidden">3 звезды</span>
+            </p>
+            <p>Рейтинг:<span class="hotel_range_info"> 9.2</span></p>
           </li>
 
           <li class="search_result_inner">
@@ -208,21 +222,23 @@
             </a>
             <p class="hotel_type">Гостиница</p>
             <p class="hotel_price">От 3000 ₽</p>
-            <a href="#" class="user_btns_detail">Подробнее</a>
-            <a href="#" class="user_btns_favorite">В избранное</a>
-            <p class="visually_hidden">2 звезды</p>
-            <p>Рейтинг:<span class="hotel_range_info">9.2</span></p>
+            <a href="#" class="buttons user_btns_detail">Подробнее</a>
+            <a href="#" class="buttons user_btns_favorite">В избранное</a>
+            <p class="stars_block">
+              <span class="visually_hidden">2 звезды</span>
+            </p>
+            <p class="range_block">Рейтинг:<span class="hotel_range_info"> 9.2</span></p>
           </li>
         </ul>
 
-        <a href="#" class="load_more_hotels">Загрузить ещё</a>
+        <a href="#" class="buttons load_more_hotels">Загрузить ещё</a>
 
       </section>
 
       <!-- ............... конец поиска, карточек с предложениями ................ -->
 
       <section class="hotels_search_paging">
-        <h2 class="visually_hiden">Выбор сраниц</h2>
+        <h2 class="visually_hidden">Выбор страниц</h2>
         <ul class="list hotels_page_list">
           <li class="hotels_page_item">
             <a href="#" class="page_choice_link">1</a>
@@ -270,7 +286,9 @@
   
         <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post">
           <input type="email" name="user_email" class="subscribe_input" id="subscribe_input" placeholder="Ваш e-mail" required>
-          <button class="all_btn subscribe_btn" type="submit">Подписаться</button>
+          <button class="buttons subscribe_btn" type="submit">
+            Подписаться
+          </button>
         </form>
       </section>
     </main>
@@ -280,17 +298,17 @@
     <footer class="main_footer">
       <ul class="list social_list">
         <li class="social_item">
-          <a href="https://www.facebook.com/htmlacademy" class="social_link">
-            <span class="visually_hidden">facebook</span>
-          </a>
-        </li>
-        <li class="social_item">
-          <a href="https://twitter.com/htmlacademy_ru" class="social_link">
+          <a href="https://twitter.com/htmlacademy_ru" class="twitter_icon">
             <span class="visually_hidden">twitter</span>
           </a>
         </li>
         <li class="social_item">
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="social_link">
+          <a href="https://www.facebook.com/htmlacademy" class="facebook_icon">
+            <span class="visually_hidden">facebook</span>
+          </a>
+        </li>
+        <li class="social_item">
+          <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="youtube_icon">
             <span class="visually_hidden">youtube</span>
           </a>
         </li>
@@ -301,7 +319,7 @@
       <a href="https://htmlacademy.ru/" class="copyright_link">
         <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy" class="copyright_logo">
       </a>
-  </footer>
+    </footer>
   </div>
 </body>
 </html>
