@@ -6,24 +6,30 @@
   font-display: swap;
 }
 @font-face{
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
-/* body */
+/* сбросим стили, хотя это запрещено */
 
 *,
 *:before,
 *:after{
   box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
 .visually_hidden{
   position: fixed;
   transform: scale(0);
 }
+
+/* body */
+
 body{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -73,7 +79,7 @@ body{
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   line-height: 37px;
   font-size: 16px;
   font-weight: 700;
@@ -100,7 +106,8 @@ body{
 }
 
 .main_header{
-  font-size: 1.8em;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
@@ -159,7 +166,8 @@ body{
   font-size: 22px;
 }
 .searching_hotel_header{
-  font-size: 1.8em;
+  font-size: 30px;
+  line-height: 36px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -184,20 +192,26 @@ body{
   width: 100%;
   height: auto;
   background-image: url("../images/subscribe_background.jpg");
+  background-repeat: no-repeat;
   color: #ffffff;
   padding: 94px 0;
   text-align: center;
 }
-.subscribe_header{
+.main_subscribe_header{
   font-size: 30px;
   font-weight: 700;
+  line-height: 36px;
   text-transform: uppercase;
 }
-.subscribe_info{
+.main_subscribe_info{
   font-size: 22px;
 }
+.subscribe_block{
+  display: flex;
+  justify-content: center;
+}
 .subscribe_input{
-  display: inline-block;
+  display: block;
   width: 600px;
   height: 60px;
   border-radius: 10px 0 0 10px;
@@ -205,16 +219,19 @@ body{
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   padding: 0 20px;
+  background-color: #F2F2F2;
 }
 .subscribe_btn{
-  display: inline-block;
+  display: block;
   width: 200px;
   height: 60px;
   border-radius: 0 10px 10px 0 ;
   border: 0;
   color: #ffffff;
+  font-family: inherit;
   font-size: 20px;
   font-weight: 700;
+  text-transform: uppercase;
   background-color: #83B3D3;
   cursor: pointer;
 }
@@ -266,6 +283,7 @@ body{
 .catalog_header{
   font-size: 60px;
   font-weight: 700;
+  line-height: 78px;
   color: #ffffff;
 }
 .catalog_list{
@@ -297,6 +315,7 @@ body{
 .catalog_hotels_title{
   font-size: 20px;
   font-weight: 700;
+  line-height: 26px;
 }
 .price_field{
   width: 144px;
@@ -329,6 +348,7 @@ body{
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
+  line-height: 39px;
   color: #000000;
 }
 .hotels_select{
@@ -373,11 +393,12 @@ body{
 }
 .result_header_link{
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 .result_header{
   font-size: 24px;
   font-weight: 700;
+  line-height: 31px;
 }
 .user_btn_details{
   display: inline-block;
@@ -420,6 +441,7 @@ body{
   background-color: #F2F2F2;
   text-transform: uppercase;
   text-align: center;
+  font-size: 16px;
   line-height: 37px;
 }
 .hotel_range_info{
@@ -474,6 +496,10 @@ body{
   height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
 }
 
 /* catalog_subscribe */
@@ -483,11 +509,14 @@ body{
   padding: 94px 0;
   text-align: center;
 }
-.subscribe_info{
-  color: #333333;
+.catalog_subscribe_header{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
 }
-.subscribe_input{
-  background-color: #F2F2F2;
+.catalog_subscribe_info{
+  color: #333333;
 }
 
 
