@@ -13,16 +13,8 @@
   font-display: swap;
 }
 
-/* сбросим стили, хотя это запрещено */
+/* спрячем некоторые элементы */
 
-*,
-*:before,
-*:after{
-  box-sizing: border-box;
-}
-h1, h2, h3, h4, h5, h6{
-  margin: 0;
-}
 .visually_hidden{
   position: fixed;
   transform: scale(0);
@@ -50,28 +42,27 @@ body{
   padding: 0;
 }
 .nav_link{
-  display: inline-block;
   text-decoration: none;
   font-size: 26px;
   font-weight: 700;
   color: #000000;
 }
 .search_icon{
-  display: inline-block;
+  display: block;
   width: 19px;
   height: 18px;
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
 }
 .favorite_icon{
-  display: inline-block;
+  display: block;
   width: 19px;
   height: 18px;
   background-image: url("../images/favorite.svg");
   background-repeat: no-repeat;
 }
 .nav_btn{
-  display: inline-block;
+  display: block;
   width: 160px;
   height: 37px;
   border-radius: 4px;
@@ -206,7 +197,7 @@ body{
 .main_subscribe_info{
   font-size: 22px;
 }
-.subscribe_block{
+.subscribe_form{
   display: flex;
   justify-content: center;
 }
@@ -244,19 +235,19 @@ body{
   padding: 0;
 }
 .twitter_icon{
-  display: inline-block;
+  display: block;
   width: 18px;
   height: 15px;
   background-image: url("../images/twitter_icon.svg");
 }
 .facebook_icon{
-  display: inline-block;
+  display: block;
   width: 10px;
   height: 18px;
   background-image: url("../images/facebook_icon.svg");
 }
 .youtube_icon{
-  display: inline-block;
+  display: block;
   width: 20px;
   height: 16px;
   background-image: url("../images/youtube_icon.svg");
@@ -294,7 +285,7 @@ body{
   justify-content: flex-start;
 }
 .breadcrumbs_icon{
-  display: inline-block;
+  display: block;
   width: 12px;
   height: 12px;
   background-image: url("../images/home.svg");
@@ -362,7 +353,7 @@ body{
   padding: 0 20px;
 }
 .view_btn{
-  display: inline-block;
+  display: block;
   width: 48px;
   height: 48px;
   border-radius: 4px;
@@ -401,7 +392,7 @@ body{
   line-height: 31px;
 }
 .user_btn_details{
-  display: inline-block;
+  display: block;
   width: 133px;
   height: 37px;
   background-color: #756257;
@@ -415,7 +406,7 @@ body{
   font-weight: 700;
 }
 .user_btn_favorites{
-  display: inline-block;
+  display: block;
   width: 140px;
   height: 37px;
   background-color: #83B3D3;
@@ -491,7 +482,7 @@ body{
   margin-right: 5px;
 }
 .hotels_on_page{
-  display: inline-block;
+  display: block;
   width: 160px;
   height: 48px;
   border: 2px solid #E5E5E5;
