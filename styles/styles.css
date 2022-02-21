@@ -204,6 +204,7 @@ body{
 .main_content_item_inner{
   width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 90px;
 }
 .main_content_inner_header{
   font-size: 24px;
