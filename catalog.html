@@ -48,7 +48,7 @@
     <main class="main_catalog">
       <section class="catalog_hotels">
           <h1 class="catalog_header">Гостиницы Седоны</h1>
-          <ul class="catalog_list">
+          <ul class="catalog_list_breadcrumbs">
             <li class="catalog_item">
               <a href="index.html" class="breadcrumbs_icon">
                 <span class="visually_hidden">Домой</span>
@@ -60,7 +60,7 @@
           </ul>
           <h2 class="visually_hidden">Отбор и сортировка</h2>
           <form action="https://echo.htmlacademy.ru" class="catalog_hotels_filter" method="post">
-            <fieldset class="infrastructure">
+            <fieldset class="catalog_fieldset infrastructure">
               <legend class="catalog_hotels_title">Инфраструктура</legend>
               <ul class="catalog_list">
                   <li class="catalog_item">
@@ -83,7 +83,7 @@
                   </li>
               </ul>
             </fieldset>
-            <fieldset class="hotels_type">
+            <fieldset class="catalog_fieldset hotels_type">
               <legend class="catalog_hotels_title">Тип жилья</legend>
               <ul class="catalog_list">
                 <li class="catalog_item">
@@ -106,23 +106,29 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="type_of_hotel">
+            <fieldset class="catalog_fieldset type_of_hotel">
               <legend class="catalog_hotels_title">
                 Стоимость, <span>&#x20bd;</span>
               </legend>
               <ul class="catalog_list">
-                <li class="catalog_item">
-                  <label for="price_field_min">
-                    От
-                    <input type="text" id="price_field_min" class="price_field" placeholder="0"   name="min_price">
-                  </label>
-                </li>
-                <li class="catalog_item">
-                  <label for="price_field_max">
-                    До
-                    <input type="text" id="price_field_max" class="price_field" placeholder="9000" name="max_price">
-                  </label>
-                </li>
+
+
+
+                <div class="catalog_list_range">
+                  <li class="catalog_item_input input_min">
+                    <label for="price_field_min" class="price_field_min">от</label>
+                      <input type="text" id="price_field_min" class="price_field" placeholder="от" size="4" value="0"  name="min_price">
+                  </li>
+
+
+                  <li class="catalog_item_input input_max">
+                    <label for="price_field_max" class="price_field_max">до</label>
+                    <input type="text" id="price_field_max" class="price_field" placeholder="до" size="4" value="9000" name="max_price">
+                  </li>
+                </div>
+
+
+
                 <li class="catalog_item">
                   <label for="range_field">
                     <input type="range" class="range_field" id="range_field">
@@ -130,8 +136,10 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="submit_btn" type="submit">Применить</button>
-            <button class="reset_btn" type="reset">Сбросить</button>
+            <div class="catalog_buttons_block">
+              <button class="submit_btn" type="submit">Применить</button>
+              <button class="reset_btn" type="reset">Сбросить</button>
+            </div>
           </form>
       </section>
       <section class="hotels_sort">
