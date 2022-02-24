@@ -13,8 +13,8 @@
   font-display: swap;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 img {
@@ -108,7 +108,7 @@ body{
   background-repeat: no-repeat;
   position: relative;
 }
-.favorite_icon:before{
+.favorite_icon::before{
   content: "12";
   position: absolute;
   top: -9px;
@@ -217,7 +217,6 @@ body{
 }
 .main_content_item_inner{
   width: 400px;
-  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,7 +233,7 @@ body{
   color: #000000;
   position: relative;
 }
-.inner_header_housing:before{
+.inner_header_housing::before{
   content: "";
   width: 75px;
   height: 72px;
@@ -244,7 +243,7 @@ body{
   transform: translateX(-50%);
   background: url("../images/house_icon.svg");
 }
-.inner_header_food:after{
+.inner_header_food::after{
   content: "";
   width: 74px;
   height: 70px;
@@ -254,11 +253,11 @@ body{
   transform: translateX(-50%);
   background: url("../images/burger_icon.svg");
 }
-.inner_header_souvenir:before{
+.inner_header_souvenir::before{
   content: "";
   width: 64px;
   height: 76px;
-  position: absolute;
+position: absolute;
   top: -80px;
   left: 50%;
   transform: translateX(-50%);
@@ -267,7 +266,6 @@ body{
 .inner_info{
   margin: 0;
   width: 250px;
-  height: 73px;
   padding: 20px 0;
 }
 .food_block{
@@ -369,11 +367,20 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+.main_footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .social_list{
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+}
+.social_item{
+  width: 30px;
+  height: 30px;
 }
 .twitter_icon{
   display: block;
@@ -386,7 +393,6 @@ body{
   width: 10px;
   height: 18px;
   background-image: url("../images/facebook_icon.svg");
-  margin: 0 30px;
 }
 .youtube_icon{
   display: block;
@@ -400,6 +406,7 @@ body{
   font-size: 40px;
   line-height: 1;
   color: #000000;
+  padding: 40px 0;
 }
 /* ---------------------------------------- catalog.html ----------------------------------------------- */
 .catalog_hotels{
