@@ -12,39 +12,37 @@
       <a href="index.html" class="nav_link_logo">
         <img src="images/logo.svg" width="139" height="70" alt="Логотип Седона" class="nav_logo">
       </a>
-      <div class="page_header_inner_wrap">
-        <ul class="nav_list">
-          <li class="nav_list_item">
-            <a href="index.html" class="nav_link">Главная</a>
-          </li>
-          <li class="nav_list_item">
-            <a href="#" class="nav_link">О Седоне</a>
-          </li>
-          <li class="nav_list_item">
-            <a href="catalog.html" class="nav_link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="nav_list navigation_user">
-          <li class="nav_list_item">
-            <a href="#" class="search_icon">
-              <span class="visually_hidden">Найти</span>
-            </a>
-          </li>
-          <li class="nav_list_item">
-            <a href="#" class="favorite_icon">
-              <span class="visually_hidden">Нравится</span>
-            </a>
-          </li>
-          <li class="nav_list_item">
-            <a href="catalog.html" class="nav_btn">
-              Хочу сюда
-            </a>
-          </li>
-        </ul>
-      </div>
+      <ul class="navigation_list">
+        <li class="nav_list_item">
+          <a href="index.html" class="nav_link">Главная</a>
+        </li>
+        <li class="nav_list_item">
+          <a href="#" class="nav_link">О Седоне</a>
+        </li>
+        <li class="nav_list_item">
+          <a href="catalog.html" class="nav_link">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation_user">
+        <li class="nav_list_item">
+          <a href="#" class="search_icon">
+            <span class="visually_hidden">Найти</span>
+          </a>
+        </li>
+        <li class="nav_list_item">
+          <a href="#" class="favorite_icon">
+            <span class="visually_hidden">Нравится</span>
+          </a>
+        </li>
+        <li class="nav_list_item">
+          <a href="catalog.html" class="nav_btn">
+            Хочу сюда
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
-  <!--  секция main  -->
+                                      <!--  секция main  -->
   <main class="main_catalog">
     <section class="catalog_hotels">
       <div class="catalog_header_wrap">
@@ -118,19 +116,18 @@
             <div class="catalog_input_inner_wrap">
               <p class="catalog_item_input input_min">
                 <label for="price_field_min" class="price_field_min"></label>
-                <input type="text" id="price_field_min" class="price_field" placeholder="от" size="4" value="0"
-                       name="min_price">
+                <input type="text" id="price_field_min" class="price_field" placeholder="от" size="4" value="0" name="min_price">
               </p>
               <p class="catalog_item_input input_max">
                 <label for="price_field_max" class="price_field_max"></label>
                 <input type="text" id="price_field_max" class="price_field" placeholder="до" size="4" value="9000" name="max_price">
               </p>
             </div>
-              <p class="catalog_item">
-                <label for="range_field">
-                  <input type="range" class="range_field" id="range_field">
-                </label>
-              </p>
+            <p class="catalog_item">
+              <label for="range_field">
+                <input type="range" class="range_field" id="range_field">
+              </label>
+            </p>
           </fieldset>
           <div class="catalog_buttons_wrap">
             <button class="submit_btn" type="submit">Применить</button>
@@ -142,8 +139,7 @@
     <section class="hotels_sort">
       <h3 class="hotels_sort_header">Найдено гостиниц: 38</h3>
       <form action="https://echo.htmlacademy.ru" class="hotels_sort_form" method="post">
-        <select size="1" name="hotels_sort_select" class="hotels_select" id="hotels_sort_select"
-                aria-label="Сортировка">
+        <select size="1" name="hotels_sort_select" class="hotels_select" id="hotels_sort_select" aria-label="Сортировка">
           <option value="Сначала дешёвые">Сначала дешёвые</option>
           <option value="Сначала дорогие">Сначала дорогие</option>
         </select>
@@ -160,7 +156,7 @@
         </a>
       </div>
     </section>
-    <!--  результаты поиска, карточки с предложениями  -->
+                      <!--  результаты поиска, карточки с предложениями  -->
     <section class="hotels_search_result">
       <h2 class="visually_hidden">Список отелей</h2>
       <ul class="search_list">
@@ -249,7 +245,7 @@
         <a href="#" class="load_more_hotels">Загрузить ещё</a>
       </div>
     </section>
-    <!--  конец поиска, карточек с предложениями  -->
+                           <!--  конец поиска, карточек с предложениями  -->
     <section class="hotels_search_paging">
       <h2 class="visually_hidden">Выбор страниц</h2>
       <ul class="list hotels_page_list">
@@ -279,7 +275,7 @@
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-            <option value="4">4</option>
+            <option selected value="4">4</option>
             <option value="5">5</option>
             <option value="6">6</option>
           </select>
@@ -303,31 +299,29 @@
   </main>
   <!-- footer -->
   <footer class="main_footer">
-    <div class="main_footer_wrap">
-      <ul class="social_list">
-        <li class="social_item">
-          <a href="https://twitter.com/htmlacademy_ru" class="twitter_icon">
-            <span class="visually_hidden">twitter</span>
-          </a>
-        </li>
-        <li class="social_item">
-          <a href="https://www.facebook.com/htmlacademy" class="facebook_icon">
-            <span class="visually_hidden">facebook</span>
-          </a>
-        </li>
-        <li class="social_item">
-          <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="youtube_icon">
-            <span class="visually_hidden">youtube</span>
-          </a>
-        </li>
-      </ul>
-      <address class="phone_number">
-        <a href="tel:+78005558628" class="main_footer_phone">+7 (812) 812-12-12</a>
-      </address>
-      <a href="https://htmlacademy.ru/" class="copyright_link">
-        <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy" class="copyright_logo">
-      </a>
-    </div>
+    <ul class="social_list">
+      <li class="social_item">
+        <a href="https://twitter.com/htmlacademy_ru" class="main_footer_icon twitter_icon">
+          <span class="visually_hidden">twitter</span>
+        </a>
+      </li>
+      <li class="social_item">
+        <a href="https://www.facebook.com/htmlacademy" class="main_footer_icon facebook_icon">
+          <span class="visually_hidden">facebook</span>
+        </a>
+      </li>
+      <li class="social_item">
+        <a href="https://www.youtube.com/HTMLAcademyRUS" class="main_footer_icon youtube_icon">
+          <span class="visually_hidden">youtube</span>
+        </a>
+      </li>
+    </ul>
+    <address class="phone_number">
+      <a href="tel:+78005558628" class="main_footer_phone">+7 (812) 812-12-12</a>
+    </address>
+    <a href="https://htmlacademy.ru/" class="copyright_link">
+      <img src="images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy" class="copyright_logo">
+    </a>
   </footer>
 </div>
 </body>
