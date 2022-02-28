@@ -58,79 +58,75 @@
       </ul>
        <h2 class="visually_hidden">Отбор и сортировка</h2>
       <form action="https://echo.htmlacademy.ru" class="catalog_hotels_filter" method="post">
-        <div class="catalog_infrastructure_wrap">
-          <fieldset class="catalog_fieldset infrastructure">
-            <legend class="catalog_hotels_title">Инфраструктура</legend>
-            <ul class="catalog_list">
-              <li class="catalog_item">
-                <label for="swim">
-                  <input type="checkbox" class="checkbox" id="swim" name="swim" checked>
-                  Бассейн
-                </label>
-              </li>
-              <li class="catalog_item_parking">
-                <label for="parking">
-                  <input type="checkbox" class="checkbox" id="parking" name="parking" checked>
-                  Парковка
-                </label>
-              </li>
-              <li class="catalog_item">
-                <label for="WiFi">
-                  <input type="checkbox" class="checkbox" id="WiFi" name="WiFi">
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog_fieldset hotels_type">
-            <legend class="catalog_hotels_title">Тип жилья</legend>
-            <ul class="catalog_list">
-              <li class="catalog_item">
-                <label class="control" for="inn">
-                  <input type="radio" class="radio_btn" id="inn" name="radio_btn" value="inn" checked>
-                  Гостиница
-                </label>
-              </li>
-              <li class="catalog_item_parking">
-                <label for="hotel">
-                  <input type="radio" class="radio_btn" id="hotel" name="radio_btn" value="hotel">
-                  Отель
-                </label>
-              </li>
-              <li class="catalog_item">
-                <label for="apartments">
-                  <input type="radio" class="radio_btn" id="apartments" name="radio_btn" value="apartments">
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-        <div class="catalog_input_wrap">
-          <fieldset class="catalog_fieldset type_of_hotel">
-            <legend class="catalog_hotels_title">
-              Стоимость, <span>&#x20bd;</span>
-            </legend>
-            <div class="catalog_input_inner_wrap">
-              <p class="catalog_item_input input_min">
-                <label for="price_field_min" class="price_field_min"></label>
-                <input type="text" id="price_field_min" class="price_field" placeholder="от" size="4" value="0" name="min_price">
-              </p>
-              <p class="catalog_item_input input_max">
-                <label for="price_field_max" class="price_field_max"></label>
-                <input type="text" id="price_field_max" class="price_field" placeholder="до" size="4" value="9000" name="max_price">
-              </p>
-            </div>
-            <p class="catalog_item">
-              <label for="range_field">
-                <input type="range" class="range_field" id="range_field">
+        <fieldset class="catalog_fieldset infrastructure">
+          <legend class="catalog_hotels_title">Инфраструктура</legend>
+          <ul class="catalog_list">
+            <li class="catalog_item">
+              <label for="swim">
+                <input type="checkbox" class="checkbox" id="swim" name="swim" checked>
+                Бассейн
               </label>
+            </li>
+            <li class="catalog_item_parking">
+              <label for="parking">
+                <input type="checkbox" class="checkbox" id="parking" name="parking" checked>
+                Парковка
+              </label>
+            </li>
+            <li class="catalog_item">
+              <label for="WiFi">
+                <input type="checkbox" class="checkbox" id="WiFi" name="WiFi">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog_fieldset hotels_type">
+          <legend class="catalog_hotels_title">Тип жилья</legend>
+          <ul class="catalog_list">
+            <li class="catalog_item">
+              <label class="control" for="inn">
+                <input type="radio" class="radio_btn" id="inn" name="radio_btn" value="inn" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="catalog_item_parking">
+              <label for="hotel">
+                <input type="radio" class="radio_btn" id="hotel" name="radio_btn" value="hotel">
+                Отель
+              </label>
+            </li>
+            <li class="catalog_item">
+              <label for="apartments">
+                <input type="radio" class="radio_btn" id="apartments" name="radio_btn" value="apartments">
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog_fieldset type_of_hotel">
+          <legend class="catalog_hotels_title">
+            Стоимость, <span>&#x20bd;</span>
+          </legend>
+          <div class="catalog_input_inner_wrap">
+            <p class="catalog_item_input input_min">
+              <label for="price_field_min" class="price_field_min"></label>
+              <input type="text" id="price_field_min" class="price_field" placeholder="от" size="4" value="0" name="min_price">
             </p>
-          </fieldset>
-          <div class="catalog_buttons_wrap">
-            <button class="submit_btn" type="submit">Применить</button>
-            <button class="reset_btn" type="reset">Сбросить</button>
+            <p class="catalog_item_input input_max">
+              <label for="price_field_max" class="price_field_max"></label>
+              <input type="text" id="price_field_max" class="price_field" placeholder="до" size="4" value="9000" name="max_price">
+            </p>
           </div>
+          <p class="catalog_item">
+            <label for="range_field">
+              <input type="range" class="range_field" id="range_field">
+            </label>
+          </p>
+        </fieldset>
+        <div class="catalog_buttons_wrap">
+          <button class="catalog_button submit_btn" type="submit">Применить</button>
+          <button class="catalog_button reset_btn" type="reset">Сбросить</button>
         </div>
       </form>
     </section>
